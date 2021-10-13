@@ -16,6 +16,8 @@ public class Main {
      * *** POR FAVOR INDIQUE EN PATH LA RUTA HACIA LA CARPETA CLASSES ***
      */
     static String PATH = "D:\\OpenBeansProjects\\Procesos_Cooperantes\\build\\classes";
+    static String COMANDO = "procesosjava.LectorDePacientes";
+    static String COMANDO2 = "procesosjava.IdentificadorDePacientes";
 
     public static void main(String[] args) {
 
@@ -67,7 +69,7 @@ public class Main {
     private static void lanzadorProceso1(String FILE) {
 
         String ENTER = "\n";
-        String comando = "procesosjava.LectorDePacientes";
+        String comando = COMANDO;
         File path = new File(PATH);
 
         InputStreamReader stream = new InputStreamReader(System.in, Charset.forName("UTF-8"));
@@ -109,7 +111,7 @@ public class Main {
 
     private static void lanzadorProceso2(String FILE) {
 
-        String comando2 = "procesosjava.IdentificadorDePacientes";
+        String comando2 = COMANDO2;
         File path = new File(PATH);
 
         InputStreamReader stream = new InputStreamReader(System.in, Charset.forName("UTF-8"));
