@@ -12,6 +12,11 @@ import java.util.GregorianCalendar;
 
 public class Main {
 
+    /**
+     * *** POR FAVOR INDIQUE EN PATH LA RUTA HACIA LA CARPETA CLASSES ***
+     */
+    static String PATH = "D:\\OpenBeansProjects\\Procesos_Cooperantes\\build\\classes";
+
     public static void main(String[] args) {
 
         String FILE;
@@ -63,7 +68,7 @@ public class Main {
 
         String ENTER = "\n";
         String comando = "procesosjava.LectorDePacientes";
-        File path = new File("D:\\OpenBeansProjects\\Procesos_Cooperantes\\build\\classes");
+        File path = new File(PATH);
 
         InputStreamReader stream = new InputStreamReader(System.in, Charset.forName("UTF-8"));
         BufferedReader bf = new BufferedReader(stream);
@@ -105,7 +110,7 @@ public class Main {
     private static void lanzadorProceso2(String FILE) {
 
         String comando2 = "procesosjava.IdentificadorDePacientes";
-        File path = new File("D:\\OpenBeansProjects\\Procesos_Cooperantes\\build\\classes");
+        File path = new File(PATH);
 
         InputStreamReader stream = new InputStreamReader(System.in, Charset.forName("UTF-8"));
         BufferedReader bf = new BufferedReader(stream);
